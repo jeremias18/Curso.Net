@@ -1,6 +1,4 @@
-﻿
-
-Console.WriteLine("Ingrese la cantidad de filas.");
+﻿Console.WriteLine("Ingrese la cantidad de filas.");
 int filas = int.Parse(Console.ReadLine());
 Console.WriteLine("Ingrese la cantidad de columnas.");
 int columnas = int.Parse(Console.ReadLine());
