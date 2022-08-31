@@ -4,6 +4,7 @@ using CodeFirst_example.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodeFirst_example.Migrations
 {
     [DbContext(typeof(CodeFirst))]
-    partial class CodeFirstModelSnapshot : ModelSnapshot
+    [Migration("20220829173349_MaxLengthMigration")]
+    partial class MaxLengthMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
